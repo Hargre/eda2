@@ -1,3 +1,5 @@
+//Matheus Joranhezon 150018428
+//Felipe Hargreaves 15009313
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -43,8 +45,8 @@ int circular_search(int *circular_array, int key, int left_bound, int right_boun
   }
 
   /*
-   * As the list is circular, we don't know its starting point. 
-   * However, taking the middle position as a pivot, there are 
+   * As the list is circular, we don't know its starting point.
+   * However, taking the middle position as a pivot, there are
    * two sublists: at least one of those is sorted.
    */
 
@@ -57,7 +59,7 @@ int circular_search(int *circular_array, int key, int left_bound, int right_boun
 
     /* If not, search again in the unsorted half */
     return circular_search(circular_array, key, (middle + 1), right_bound);
-  } 
+  }
 
   /* Checks if upper half is sorted */
   else if (circular_array[middle] < circular_array[right_bound]) {
@@ -82,7 +84,7 @@ int main() {
 
     if (result >= 0) {
       printf("Number %d found at position %d\n", key, result);
-    } 
+    }
     else {
       printf("Number %d not found!\n", key);
     }
