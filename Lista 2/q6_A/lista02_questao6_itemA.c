@@ -48,16 +48,13 @@ int* heapify(int *vector, int current_index){
   right = right_index(current_index);
 
   int largest;
-  if(left <= vector[0] && vector[left] > vector[current_index]){
+  if(left <= vector[0] && vector[left] > vector[current_index])
     largest = left;
-  }
-  else{
+  else
     largest = current_index;
-  }
 
-  if(right <= vector[0] && vector[right] > vector[largest]){
+  if(right <= vector[0] && vector[right] > vector[largest])
     largest = right;
-  }
 
   if(largest != current_index){
     int swap = vector[current_index];
