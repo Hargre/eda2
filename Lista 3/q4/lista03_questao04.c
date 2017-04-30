@@ -128,5 +128,6 @@ int main() {
   printf("Sorted:\n");
   print_array(array, LENGTH);
 
+  destroy_array(array);
   return 0;
 }
