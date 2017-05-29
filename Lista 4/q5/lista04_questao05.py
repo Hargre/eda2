@@ -1,3 +1,7 @@
+#Matheus Joranhezon 15/0018428
+#Felipe Hargreaves - 15/0009313
+
+
 def tower_placement(houses, tower_range):
     """
     Given a list of houses in a road, sorted by its distance from one end

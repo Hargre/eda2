@@ -1,3 +1,6 @@
+#Matheus Joranhezon 15/0018428
+#Felipe Hargreaves - 15/0009313
+
 def gen_sequence():
     yahoo = "buy Yahoo"
     ebay = "buy Ebay"
@@ -39,5 +42,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
