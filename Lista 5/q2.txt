@@ -1,0 +1,17 @@
+Considerando um vetor (a1, a2, ..., an), dar um algoritmo que retorne o número de inversões significativas (N) e o vetor ordenado:
+
+Divide-se o vetor em duas metades, k1 e k2;
+
+Aplica-se o algoritmo recursivamente em k1, retornando N1 e (b1, b2, ..., bk)
+Aplica-se o algoritmo recursivamente em k2, retornando N2 e (bk+1, bk+2, ... bn)
+
+Calcula-se o número de inversões significativas N3 (ai, aj) onde (i <= k < j):
+  Esse cálculo é feito em duas etapas:
+    Primeiro se realiza o merge entre (b1, b2, ..., bk) e (bk+1, bk+2, ... bn), apenas para ordenar os valores;
+    Então se realiza um segundo merge entre (b1, b2, ..., bk) e (2bk+1, 2bk+2, ... 2bn) para contar as inversões significativas.
+
+Número de inversões: N = N1 + N2 + N3
+O vetor ordenador é o resultado do merge entre (b1, b2, ..., bk) e (bk+1, bk+2, ... bn)
+
+Caso base para a recursão: 
+  Tamanho da sequência == 1 => retorna-se (N = 0 e {a1})
