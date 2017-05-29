@@ -1,0 +1,1 @@
+Dividi-se o número de cartões em duas pilhas distintas, ambas de mesmo tamanho. Para cada pilha, chama-se um algoritmo recursivo para checar a quantidade de cartões com equilavência. Após isso, checa-se se a quantidade encontrada em cada pilha é mais que a metade dos cartões equivalentes, se for, compara-se esse cartão com todos da segunda pilha.

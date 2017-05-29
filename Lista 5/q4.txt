@@ -1,0 +1,2 @@
+ Utilizando uma convolução, que é implementada de maneira a definir um vetor guardando os valores de q1 até qn. Além disso, utiliza-se um vetor  b para armazenar n^-2, (n - 1)^-2, etc. Assim, para cada j, utiliza-se os valores de a e b para chegar a força desejada.
+Utiliza-se a formúla: Somátorio(qi/(j - i)²) + Somátorio(-qi/(j - i)²) 
