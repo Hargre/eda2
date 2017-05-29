@@ -1,0 +1,11 @@
+Considerando dois bancos de dados, DB1 e DB2, cada um de tamanho n:
+
+Pega-se a mediana de cada banco, m1 e m2, correspondentes ao valor (n/2) de cada uma.
+Se m1 < m2:
+  Aplica-se o algoritmo recursivamente na segunda metade de m1 e na primeira metade de m2;
+  As metades não usadas são desconsideradas.
+Se m1 > m2:
+  Aplica-se o algoritmo recursivamente na primeira metade de m1 e na segunda metade de m2;
+  As metades não usadas são desconsideradas.
+Quando se esgota o número possível de divisões (n == 1), escolhe-se min(m1, m2). Este valor é a mediana dos dois conjuntos.
+  
