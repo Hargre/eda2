@@ -1,3 +1,6 @@
+﻿#Matheus Joranhezon 15/0018428
+#Felipe Hargreaves - 15/0009313
+
 Considerando dois bancos de dados, DB1 e DB2, cada um de tamanho n:
 
 Pega-se a mediana de cada banco, m1 e m2, correspondentes ao valor (n/2) de cada uma.

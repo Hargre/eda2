@@ -1,1 +1,6 @@
-Divide-se o número de cartões em duas pilhas distintas de forma recursiva até obter-se um único elemento. Para cada pilha, chama-se um algoritmo recursivo para checar a quantidade de cartões com equilavência. Após isso, checa-se se a quantidade encontrada em cada pilha é mais que a metade dos cartões equivalentes, se for, compara-se esse cartão com todos da segunda pilha.
+﻿#Matheus Joranhezon 15/0018428
+#Felipe Hargreaves - 15/0009313
+
+Divide-se o número de cartões em duas pilhas distintas de forma recursiva até obter-se um único elemento. 
+Para cada pilha, chama-se um algoritmo recursivo para checar a quantidade de cartões com equilavência. 
+Após isso, checa-se se a quantidade encontrada em cada pilha é mais que a metade dos cartões equivalentes, se for, compara-se esse cartão com todos da segunda pilha.

@@ -1,3 +1,6 @@
+﻿#Matheus Joranhezon 15/0018428
+#Felipe Hargreaves - 15/0009313
+
 Considerando um vetor (a1, a2, ..., an), dar um algoritmo que retorne o número de inversões significativas (N) e o vetor ordenado:
 
 Divide-se o vetor em duas metades, k1 e k2;
