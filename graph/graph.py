@@ -28,8 +28,33 @@ class Graph:
         """ Adds an edge between
             two nodes in the graph.
         """
+        from_node = self.node_dict.get(from_node)
+        to_node = self.node_dict.get(to_node)
+
         from_node.edges.append(to_node)
         to_node.edges.append(from_node)
+
+    def print_nodes(self):
+        """ Uses BFS to print all nodes in the graph. """
+        to_visit = deque()
+        to_visit.append(self.nodes[0])
+        visited = []
+
+        while to_visit:
+            current_node = to_visit.pop()
+            visited.append(current_node)
+            print(current_node.value)
+
+            for node in current_node.edges:
+                if node in visited or node in to_visit:
+                    continue
+                else:
+                    to_visit.append(node)
+            if not to_visit:
+                for node in self.nodes:
+                    if node not in visited:
+                        to_visit.append(node)
+
 
     def distance(self, source_name, target_name):
         """ Modified version of BFS.
@@ -38,6 +63,9 @@ class Graph:
         """
         source = self.node_dict.get(source_name)
         target = self.node_dict.get(target_name)
+
+        if not source or not target:
+            return "Pessoa não encontrada"
 
         if source == target:
             return 0
@@ -59,3 +87,5 @@ class Graph:
                     return distance + 1
                 else:
                     to_visit.append(node)
+
+        return "Não existe caminho que conecta estas pessoas"
